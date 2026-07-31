@@ -1,0 +1,1 @@
+Redesign my React Spotify Playlist project, make it Gen Z aesthetic while keeping all existing functionality.improve only the UI/UX using CSS
