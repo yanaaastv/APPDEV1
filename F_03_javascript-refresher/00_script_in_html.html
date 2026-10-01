@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yana's Script Basics</title>
+</head>
+<body>
+    <h1>Loading My Screen....</h1>
+
+    <script>
+        console.log("Hello this is my inline script ^^")
+    </script>
+<!-- Classic script: runs immediately where it sits, no import/export, variables can leak to the global scope -->
+    <script src="legacy.js"></script>
+ 
+<!-- Module script: waits for HTML parsing to finish (like defer), runs once, has its own scope, and CAN use import/export -->
+    <script type="module" src="app.js"></script>
+ 
+    <script type="module">
+    import { userInfo } from "./15_modules_export.js";
+    console.log(userInfo.name);
+    </script>
+</body>
+</html>
