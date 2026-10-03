@@ -30,3 +30,19 @@ Use @[02_variables.js] for this part and explain do not modify anything yet.
 Reflection
 Since pina-explain ko po sa kanya yung file mas madali niyang na-produce yung answer kasi wala naman po akong pinabago, explain lang talga. Mas naging malinaw sakin yung difference ng `== and ===`.
 
+### 03_functions.js
+
+Propmt
+Use @[03_functions.js]. Create and explain each function in simple and understandable way. run the
+  code and make sure theres no error
+  
+  File: 03_functions.js
+  Goal: I want you to create simple examples related to me. Use personal details for the function
+  parameters, such as my name or age. For the calculator, use two simple numbers and return the results
+  as an object. Choose simple variable names that match the examples.
+  Limits: no advanced syntax
+  Verification: run with Node using node 03_functions.js
+
+Reflection
+Mas naintindihan ko po yung difference ng function declaration at arrow function dahil pina-explain ko po sa kanya bawat function. Mas naging clear din po sa akin kung paano ginagamit ang parameters, return values, at objects. Naka-help din po yung pag-run ng code para masigurado na walang error.
+
