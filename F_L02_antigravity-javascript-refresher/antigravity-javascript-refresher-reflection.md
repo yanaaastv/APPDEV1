@@ -17,3 +17,16 @@ Use @[01_base_syntax.js] to help me complete this exercise
 Reflection
 Natagalan po ako pano siya ifigure out like na-confuse po how to mando the agy kasi kung normal na prompt lang po pwede namin sabihin na "please do this exercise" tapos may result na pero dito po we need to be specific kung ano yung ipapagawa namin sakanya kasi sayang nga po sa token and mas maayos po kung detailed na yung ibibigay namin before po i-enter.
 
+### 02_variables.js
+
+Prompt
+Use @[02_variables.js] for this part and explain do not modify anything yet.
+  
+  File: 02_variables.js
+  Goal: Open the file and do not modify anything yet. I want you to explain the difference between string, number, and boolean, then explain typeof, ==, and === in simple terms. After explaining, create a short implementation plan for the exercise.
+  Limits: no advanced syntax
+  Verification: no code changes yet
+
+Reflection
+Since pina-explain ko po sa kanya yung file mas madali niyang na-produce yung answer kasi wala naman po akong pinabago, explain lang talga. Mas naging malinaw sakin yung difference ng `== and ===`.
+
