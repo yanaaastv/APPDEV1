@@ -46,3 +46,16 @@ Use @[03_functions.js]. Create and explain each function in simple and understan
 Reflection
 Mas naintindihan ko po yung difference ng function declaration at arrow function dahil pina-explain ko po sa kanya bawat function. Mas naging clear din po sa akin kung paano ginagamit ang parameters, return values, at objects. Naka-help din po yung pag-run ng code para masigurado na walang error.
 
+### 04_objects.js
+
+Prompt 
+Open @[04_objects.js] and help to understand by explaining and following my instruction
+  
+  File: 04_objects.js
+  Goal: Help me create an aboutMe object using my name, age, and course. Add an introduce() method using this.name. Explain first why a regular function is better than an arrow function for this.name.
+  Limits: no advanced syntax
+  Verification: run with Node using node 04_objects.js and after running it make sure theres no error detected
+
+Reflection
+Mas naging clear po sa akin kung paano ginagamit ang this.name and why mas bagay yung regular function than arrow function. It hepls din po nung nag-run ng code para masigurado na walang error.
+
