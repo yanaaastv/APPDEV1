@@ -59,3 +59,17 @@ Open @[04_objects.js] and help to understand by explaining and following my inst
 Reflection
 Mas naging clear po sa akin kung paano ginagamit ang this.name and why mas bagay yung regular function than arrow function. It hepls din po nung nag-run ng code para masigurado na walang error.
 
+### 05_arrays.js
+
+Prompt 
+Using @[05_arrays.js]. help me do this part and make sure you follow my instruction and explain it to
+  me after you run it. make sure no error
+  
+  File: 05_arrays.js
+  Goal: Can you create a simple array related to me, such as my hobbies or favorite things. Use one
+  method that changes the original array and another that creates a new array. Compare the results.
+  Limits: no advanced syntax
+  Verification: run with Node using node 05_arrays.js and check for errors..
+
+Reflection
+Naka-help po for me na mas maintindihan how to use array and nalaman ko po na pwede palang baguhin or gumawa ng bagong array. Also yung pag-compare ng original at transformed array para makita ko yung difference nila. Mas naging clear din po sa akin kung paano ginagamit ang .map().
