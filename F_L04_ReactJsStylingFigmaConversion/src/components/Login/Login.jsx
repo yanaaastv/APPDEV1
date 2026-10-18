@@ -1,8 +1,7 @@
-
 import styles from "./Login.module.css";
 import logo from "../../assets/logo.svg";
 
-export default function Login() {
+export default function Login({ onSwitch }) {
     return (
         <div className={styles.login}>
             {/* Left panel */}
@@ -29,15 +28,36 @@ export default function Login() {
             {/* Right panel */}
             <section className={styles.right}>
                 <div className={styles.form}>
+                    <img
+                        className={styles.mobileLogo}
+                        src={logo}
+                        alt="Design Spacee logo"
+                    />
+
                     <h2>Sign-in</h2>
 
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        aria-label="Email"
+                        autoComplete="email"
+                        required
+                    />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        aria-label="Password"
+                        autoComplete="current-password"
+                        required
+                    />
 
-                    <button>Login</button>
+                    <button type="button">Login</button>
 
                     <p className={styles.signup}>
-                        Don't have an account? <a href="#">Signup Here</a>
+                        Don't have an account?{" "}
+                        <a href="#" onClick={(e) => { e.preventDefault(); onSwitch?.(); }}>
+                            Signup Here
+                        </a>
                     </p>
                 </div>
             </section>

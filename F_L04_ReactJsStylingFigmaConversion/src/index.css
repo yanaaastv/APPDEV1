@@ -16,3 +16,9 @@ body {
   display: grid;
   place-items: center;
 }
+
+@media (max-width: 600px) {
+  body {
+    display: block;
+  }
+}

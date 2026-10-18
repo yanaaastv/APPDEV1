@@ -33,6 +33,12 @@ function Signup({ onSwitch }) {
                     className={styles.form}
                     onSubmit={(event) => event.preventDefault()}
                 >
+                    <img
+                        src={logo}
+                        alt="Design Spacee Logo"
+                        className={styles.mobileLogo}
+                    />
+
                     <h2>Create Account</h2>
 
                     {/* Social sign-up buttons */}
@@ -95,7 +101,9 @@ function Signup({ onSwitch }) {
 
                     <p className={styles.loginLink}>
                         Already have an account?{" "}
-                        <a href="#" onClick={(e) => { e.preventDefault(); onSwitch?.(); }}>Login</a>
+                        <a href="#" onClick={(e) => { e.preventDefault(); onSwitch?.(); }}>
+                            Login
+                        </a>
                     </p>
                 </form>
             </section>

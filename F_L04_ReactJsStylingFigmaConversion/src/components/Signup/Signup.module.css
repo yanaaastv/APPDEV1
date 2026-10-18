@@ -1,4 +1,3 @@
-
 /* Main signup container */
 .signupPage {
     display: flex;
@@ -69,6 +68,10 @@
     width: 100%;
     max-width: 360px;
     margin: 0 auto;
+}
+
+.mobileLogo {
+    display: none;
 }
 
 .form h2 {
@@ -200,32 +203,13 @@
     text-decoration: underline;
 }
 
-/* Responsive layout */
-@media (max-width: 600px) {
-    .signupPage {
-        width: 100%;
-        height: auto;
-        min-height: 100vh;
-    }
-
-    .left {
-        display: none;
-    }
-
-    .right {
-        min-height: 100vh;
-        padding: 32px 24px;
-        border-radius: 0;
-    }
-
-    .form {
-        max-width: 360px;
-    }
-}
-
-@media (min-width: 601px) and (max-width: 800px) {
+/* Tablet screens */
+@media (min-width: 601px) and (max-width: 1024px) {
     .signupPage {
         width: 92vw;
+        height: auto;
+        min-height: 560px;
+        max-height: 90vh;
     }
 
     .left {
@@ -239,5 +223,100 @@
 
     .form {
         max-width: 320px;
+    }
+}
+
+/* Mobile screens: Floating Card with top logo, centered form, soft shadow & border */
+@media (max-width: 600px) {
+    .signupPage {
+        width: 100%;
+        min-height: 100vh;
+        height: auto;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 16px;
+        overflow: visible;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .right {
+        flex: none;
+        width: 100%;
+        max-width: 420px;
+        min-height: auto;
+        background: var(--color-white, #fff);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15), 0 4px 12px rgba(15, 23, 42, 0.08);
+        padding: 36px 24px;
+    }
+
+    .mobileLogo {
+        display: block;
+        height: 52px;
+        width: auto;
+        margin: 0 auto 16px auto;
+        object-fit: contain;
+        filter: drop-shadow(0 6px 10px rgba(60, 80, 140, 0.2));
+    }
+
+    .form {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .form h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .socialButtons {
+        flex-direction: column;
+        gap: var(--spacing-sm, 8px);
+        margin-bottom: var(--spacing-lg, 24px);
+    }
+
+    .socialButton {
+        height: 44px;
+        font-size: var(--font-size-sm, 14px);
+        border-radius: var(--radius-sm, 4px);
+    }
+
+    .divider {
+        font-size: var(--font-size-sm, 14px);
+        margin: var(--spacing-sm, 8px) 0 var(--spacing-md, 16px);
+    }
+
+    .divider span {
+        height: 1px;
+        flex: 1;
+    }
+
+    .form input {
+        height: 44px;
+        font-size: var(--font-size-base, 16px);
+        padding: 10px 0;
+        margin-bottom: var(--spacing-xs, 4px);
+    }
+
+    .submitButton {
+        height: 48px;
+        font-size: var(--font-size-base, 16px);
+        border-radius: var(--radius-md, 8px);
+        margin-top: var(--spacing-md, 16px);
+    }
+
+    .loginLink {
+        font-size: var(--font-size-sm, 14px);
+        margin-top: var(--spacing-md, 16px);
+        text-align: center;
     }
 }
