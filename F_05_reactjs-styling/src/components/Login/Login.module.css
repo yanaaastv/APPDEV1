@@ -1,0 +1,186 @@
+.loginPage {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.loginCard {
+  display: grid;
+  grid-template-columns: 43.4% 56.6%;
+  width: 876px;
+  height: 540px;
+  overflow: hidden;
+  background: var(--color-white);
+  border-radius: var(--radius-card);
+}
+
+.imagePanel {
+  min-width: 0;
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+}
+
+.leavesImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.formPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  min-width: 0;
+  padding: 42px 48px 24px;
+}
+
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 12px;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.heading h1 {
+  margin: 0;
+  color: var(--color-heading);
+  font-family: var(--font-main);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heading span {
+  color: var(--color-name);
+  font-family: var(--font-main);
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 30px;
+  margin-bottom: 58px;
+}
+
+.tabs button {
+  padding: 4px 2px;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  font-family: var(--font-main);
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.activeTab {
+  color: var(--color-tab);
+  border-bottom-color: var(--color-tab) !important;
+}
+
+.inactiveTab {
+  color: var(--color-muted);
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  width: 296px;
+  max-width: 100%;
+  align-self: center;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 25px;
+  padding: 8px 2px;
+  border: 0;
+  border-bottom: 2px solid var(--color-primary);
+  border-radius: 0;
+  outline-offset: 4px;
+  background: transparent;
+  color: var(--color-primary);
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+}
+
+.input::placeholder {
+  color: var(--color-placeholder);
+  opacity: 1;
+}
+
+.input:focus {
+  outline: none;
+  border-bottom-color: var(--color-heading);
+}
+
+.loginButton {
+  width: 100%;
+  height: 36px;
+  margin-top: 5px;
+  padding: 8px 12px;
+  border: 0;
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.loginButton:hover {
+  filter: brightness(1.08);
+}
+
+.socialSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.orDivider {
+  color: var(--color-placeholder);
+  font-size: var(--font-size-base);
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.socialButton {
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.socialButton img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
